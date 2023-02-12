@@ -265,19 +265,24 @@ img.other {
     font-weight: lighter;
 }
 
-.more-services-three {
+.more-services-three,
+.interesting-box-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
-.more-services.one {
+.more-services.one,
+.interesting-box-left {
     grid-area: 1 / 1 / 2 / 2;
 }
 
-.more-services.two {
+.more-services.two,
+.interesting-box-right {
     grid-area: 1 / 2 / 2 / 3;
+}    
 
+.more-services.two {    
     border: none;
     border-radius: 4%;
     background-color: #647B64;
@@ -315,4 +320,98 @@ p.more-services-p.white {
 
 .more-services.three {
     margin-right: 75px;
+}
+
+.interesting-box-left {
+    margin-left: 140px;
+}
+
+.interesting-box-right {
+    margin-right: 140px;
+    margin-top: 144px;
+}
+
+.interesting-box-wrapper {
+    gap: 105px;
+}
+
+.interesting-box-arrow {
+    position: absolute;
+    right: 35px;
+    top: 27px;
+}
+
+.people-wrapper-top {
+    position: relative;
+    margin-left: 140px;
+    margin-top: 140px;
+}
+
+img.people-arrows {
+    position: absolute;
+    top: -17px;
+    right: 140px;
+}
+
+.people-wrapper-bottom {
+    margin-left: 140px;
+    margin-bottom: 140px;
+    display: flex;
+    position: relative;
+}
+
+.person {
+    max-width: 360px;
+    max-height: 419px;
+    padding: 35px;
+    margin-right: 35px;
+    margin-left: 20px;
+}
+
+.person.first {
+    margin-left: 0;
+}
+
+.person-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.person-image {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.person-info {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 116%;
+    font-weight: lighter;
+    margin: 0;
+    padding-top: 15px;
+}
+
+h5 {
+    font-size: 13px;
+    line-height: 132%;
+    letter-spacing: 4%;
+    font-weight: lighter;
+    margin: 0;
+}
+
+p.about-person {
+    font-size: 16px;
+    font-weight: lighter;
+    font-style: italic;
+    line-height: 132%;
+    letter-spacing: 4%;
+    color: #4F4F4F;
+}
+
+.person.last {
+    position: absolute;
+    right: -287px;
 }
